@@ -6,10 +6,10 @@ public class SegundaLeyNewton {
         Scanner tecladon = new Scanner(System.in);
         int m;
         char continuar = 'Y' ;
-final double GRAVEDADMARTE = 3.72, GRAVEDADTIERRA = 9.8, GRAVEDADJUPITER = 24.79, GRAVEDADSATURNO = 10.44, GRAVEDADVENUS = 8.87;
+final double GRAVEDADMARTE = 3.72, GRAVEDADTIERRA = 9.8, GRAVEDADJUPITER = 24.79, GRAVEDADSATURNO = 10.44, GRAVEDADVENUS = 8.87, GRAVEDADMERCURIO = 3.7;
 
         do {
-            System.out.println("Donde quieres calculaar tu peso ? : 1 = MARTE, 2 = TIERRA, 3 = JUPITER, 4 = SATURNO o 5 = VENUS?");
+            System.out.println("Donde quieres calculaar tu peso ? : 1 = MARTE, 2 = TIERRA, 3 = JUPITER, 4 = SATURNO, 5 = VENUS o MERCURIO = 6?");
             int planeta;
             planeta = tecladoPlaneta.nextInt();
 
@@ -43,6 +43,12 @@ final double GRAVEDADMARTE = 3.72, GRAVEDADTIERRA = 9.8, GRAVEDADJUPITER = 24.79
                     System.out.println("Introduce tu masa en KG : ");
                     m = tecladoMasa.nextInt();
                     System.out.println("Tu peso en Venus es de :" + m * GRAVEDADVENUS + " N");
+                    break;
+                 case 6:
+
+                    System.out.println("Introduce tu masa en KG : ");
+                    m = tecladoMasa.nextInt();
+                    System.out.println("Tu peso en Mercurio es de :" + m * GRAVEDADMERCURIO + " N");
                     break;
 
                 default:
